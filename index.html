@@ -9,17 +9,25 @@
 <body>
     <div class="container">
         <div class="card">
-            <h3 class="pokemon-name"></h3>
+          
+            <h3 class="pokemon-name">NAME</h3>
             <img class="pokemon-img" src="" alt="Pokémon Image" />
             <div class="stats">
+              <h4 class = "total-stats">TOTAL:<span class="base-stats"></span></h4>
                 <div class="HP">HP: <span class="hp-value"></span></div>
                 <div class="attack">Attack: <span class="attack-value"></span></div>
                 <div class="defense">Defense: <span class="defense-value"></span></div>
                 <div class="speed">Speed: <span class="speed-value"></span></div>
             </div>
+            <div class="types"> TYPES:
+              <div class="type-1"></div>
+              <div class="type-2"></div>
+            </div>
         </div>
         <button id="generateButton">Generate Pokémon Card</button>
     </div>
     <script src="script.js"></script>
+    <link rel="stylesheet" href="style.css">
 </body>
 </html>
+
