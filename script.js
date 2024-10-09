@@ -37,7 +37,7 @@ function renderCard(data) {
   const attackElement = document.querySelector(".attack-value");
   const defenseElement = document.querySelector(".defense-value");
   const speedElement = document.querySelector(".speed-value");
-  const totalStats = document.querySelector(".total-stats");
+  const totalStats = document.querySelector(".base-stats");
   const imgElement = document.querySelector(".pokemon-img");
   const type1 = document.querySelector(".type-1");
   const type2 = document.querySelector(".type-2");
@@ -48,26 +48,21 @@ function renderCard(data) {
     data.name.charAt(0).toUpperCase() + data.name.slice(1); // Capitalize the first letter
 
   // Set HP
-  hpElement.textContent = data.stats[0].base_stat ;
+  hpElement.textContent = data.stats[0].base_stat;
 
   // Set Attack
-  attackElement.textContent = data.stats[1].base_stat ;
+  attackElement.textContent = data.stats[1].base_stat;
 
   // Set Defense
-  defenseElement.textContent = data.stats[2].base_stat ;
+  defenseElement.textContent = data.stats[2].base_stat;
 
   // Set Speed
-  speedElement.textContent = data.stats[5].base_stat ;
+  speedElement.textContent = data.stats[5].base_stat;
 
-  //Total Stats
- 
-//   let sum = data.stats.reduce((tot, stat) => tot + stat.base_stat, 0);
-//   totalStats.textContent = sum;
- 
-  
+  //Total Stats 
 
   // Set Pokémon image
-  imgElement.src = data.sprites.front_default ;
+  imgElement.src = data.sprites.front_default;
   imgElement.alt = data.name; // Add alt text for accessibility
 
   ///types 
