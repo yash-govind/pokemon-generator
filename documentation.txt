@@ -3,15 +3,13 @@ Features :
 1) Can generate a pokemon and view its , attack, defense , speed, ,hp stats,types can also view image
 2) Used Async Await syntax and DOM . Used as a Practice Project.
 3) Uses PokeApi for APi call.
-4)
+4) shows total stats of pokemon
+5) loads pikachu stats by default on page load.
 
 TO-DO:
 1) add Styling
 2) Deploy the Project 
 
- Immeditate Scripting Help Needed for Below   : -->
- need help pls
+ Scripting Help Needed for Below TODO   : -->
 
-3) Give Weaknesses and Strengths of pokemon.
-4) Give total stats in Any Generation of pokemon.
-5) show Pikachu and its stats at the start of page and If nothing is loading and if error is there
+TODO: show Strengths and Weaknesses of pokemons. // cant find in api.

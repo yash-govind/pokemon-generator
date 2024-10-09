@@ -60,6 +60,9 @@ function renderCard(data) {
   speedElement.textContent = data.stats[5].base_stat;
 
   //Total Stats 
+  let sum = data.stats.reduce((sum,stat)=>sum+stat.base_stat,0); //total sum in the object stats.
+  totalStats.textContent = `${sum}`; 
+  
 
   // Set Pokémon image
   imgElement.src = data.sprites.front_default;
@@ -87,5 +90,15 @@ document
       renderCard(pokemonData);
     }
   });
+
+// loads pikachu by default function.
+   async function defaultPokemon(){
+    const pikachuId = 25;
+    const pikachuData =  await fetchApi(pikachuId);
+    if(pikachuData){
+      renderCard(pikachuData);
+    }
+  }
+   window.onload = defaultPokemon; //load pikachu by default using onload.
 
   //JS Done .
