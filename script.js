@@ -13,9 +13,29 @@ render the info  on card , update Hp,Attack,Defense,Speed,Img ,texcontent or inn
 3) run the event handler when clicked on generate , run a async function upon which the pokemon data 
 and pokemon id are fetched only if pokemonData promise is fulfiled. if the data is present , render it
 using renderCard function.
-4) 
-
 */
+// Type color mapping
+const typeColors = {
+  normal: "#A8A77A",
+  fire: "#EE8130",
+  water: "#6390F0",
+  electric: "#F7D02C",
+  grass: "#7AC74C",
+  ice: "#96D9D6",
+  fighting: "#C22E28",
+  poison: "#A33EA1",
+  ground: "#E2BF65",
+  flying: "#A98FF3",
+  psychic: "#F95587",
+  bug: "#A6B91A",
+  rock: "#B6A136",
+  ghost: "#735797",
+  dragon: "#6F35FC",
+  dark: "#705746",
+  steel: "#B7B7CE",
+  fairy: "#D685AD"
+};
+
 //fetch api on pokemonId
 async function fetchApi(pokemonId) {
   try {
@@ -33,6 +53,7 @@ async function fetchApi(pokemonId) {
 //render the card data or pokemonData.
 function renderCard(data) {
   //selectors.
+  const cardElement = document.querySelector(".card");
   const nameElement = document.querySelector(".pokemon-name");
   const hpElement = document.querySelector(".hp-value");
   const attackElement = document.querySelector(".attack-value");
@@ -70,11 +91,18 @@ function renderCard(data) {
   imgElement.alt = data.name; // Add alt text for accessibility
 
   ///types 
+  const pokemonTypes = data.types.map(type => type.type.name);
 
-  type1.textContent = data.types[0].type.name.toUpperCase();
+  // Set type badges and background colors based on types
+  type1.textContent = pokemonTypes[0].toUpperCase();
 
-  type2.textContent = data.types[1].type.name.toUpperCase();
-
+  if (pokemonTypes[1]) {
+    type2.textContent = pokemonTypes[1].toUpperCase();
+    type2.style.display = "inline-block"; // Show second type if available
+  } else {
+    type2.style.display = "none"; // Hide second type if there's only one
+  }
+  cardElement.style.backgroundColor = typeColors[pokemonTypes[0]] || "#fff";
 }
 // random pokemonId
 function getRandomPokemonId() {
