@@ -13,6 +13,7 @@ render the info  on card , update Hp,Attack,Defense,Speed,Img ,texcontent or inn
 3) run the event handler when clicked on generate , run a async function upon which the pokemon data 
 and pokemon id are fetched only if pokemonData promise is fulfiled. if the data is present , render it
 using renderCard function.
+4) 
 
 */
 //fetch api on pokemonId

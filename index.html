@@ -1,33 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Pokémon Card Generator</title>
     <link rel="stylesheet" href="style.css" />
-</head>
-<body>
+  </head>
+  <body>
     <div class="container">
-        <div class="card">
-          
-            <h3 class="pokemon-name">NAME</h3>
-            <img class="pokemon-img" src="" alt="Pokémon Image" />
-            <div class="stats">
-              <h4 class = "total-stats">TOTAL:<span class="base-stats"></span></h4>
-                <div class="HP">HP: <span class="hp-value"></span></div>
-                <div class="attack">Attack: <span class="attack-value"></span></div>
-                <div class="defense">Defense: <span class="defense-value"></span></div>
-                <div class="speed">Speed: <span class="speed-value"></span></div>
-            </div>
-            <div class="types"> TYPES:
-              <div class="type-1"></div>
-              <div class="type-2"></div>
-            </div>
+      <div class="card">
+        <h3 class="pokemon-name">NAME</h3>
+        <img class="pokemon-img" src="" alt="Pokémon Image" />
+        <h4 class="total-stats">TOTAL:<span class="base-stats"></span></h4>
+        <div class="stats">
+        
+        
+          <div class="HP">HP: <span class="hp-value"></span></div>
+          <div class="attack">Attack: <span class="attack-value"></span></div>
+          <div class="defense">
+            Defense: <span class="defense-value"></span>
+          </div>
+          <div class="speed">Speed: <span class="speed-value"></span></div>
+          <div class="types">
+            TYPES:
+            <span class="type-1"></div>
+            <span class="type-2"></div>
+          </div>
         </div>
-        <button id="generateButton">Generate Pokémon Card</button>
+       
+      </div>
     </div>
+     <button id="generateButton">Generate Pokémon Card</button>
     <script src="script.js"></script>
-    <link rel="stylesheet" href="style.css">
-</body>
-</html>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
 
+    <link rel="stylesheet" href="style.css" />
+  </body>
+</html>
