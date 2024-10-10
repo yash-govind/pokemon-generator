@@ -9,6 +9,5 @@ Features :
 
 TO-DO:
 1) improve UI
-2) Deploy the Project 
 
  
