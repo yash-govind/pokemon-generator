@@ -4,12 +4,11 @@ Features :
 2) Used Async Await syntax and DOM . Used as a Practice Project.
 3) Uses PokeApi for APi call.
 4) shows total stats of pokemon
-5) loads pikachu stats by default on page load.
+5) changes color of the card based o n pokemon's type.
+6) loads pikachu stats by default on page load.
 
 TO-DO:
-1) add Styling
+1) improve UI
 2) Deploy the Project 
 
- Scripting Help Needed for Below TODO   : -->
-
-TODO: show Strengths and Weaknesses of pokemons. // cant find in api.
+ 
