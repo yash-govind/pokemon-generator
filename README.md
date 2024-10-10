@@ -12,7 +12,7 @@ A simple web application that generates random Pokémon cards using data fetched
 - Displays essential details: Name, Image, Height, Weight, and Types.
 - Uses **async/await** for fetching Pokémon data from the API.
 
-## Demo
+## Demo : (https://yash-govind.github.io/pokemon-generator/)
 
 ![Pokemon Generator Demo](demo.gif) <!-- Add a GIF or screenshot of your app in action -->
 
