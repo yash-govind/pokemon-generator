@@ -90,7 +90,7 @@ function renderCard(data) {
   imgElement.src = data.sprites.front_default;
   imgElement.alt = data.name; // Add alt text for accessibility
 
-  ///types 
+  ///types get them from api and loop through them. 
   const pokemonTypes = data.types.map(type => type.type.name);
 
   // Set type badges and background colors based on types
